@@ -9,7 +9,7 @@ import matplotlib.cm as cm
 import matplotlib.colors as mcolors
 
 # === Load and prepare data ===
-data = pd.read_csv("D:/Documenten/2024hussarvandepitte/data/clean/standardized_test_etios+figo.csv", low_memory=False)
+data = pd.read_csv("C:/Users/hussa/OneDrive/Desktop/thesisapp/thesisapp/standardized_test_etios+figo.csv", low_memory=False)
 data_trip8 = data[data["trip"] == 8].copy()
 data_trip8["fourth_root_NOx"] = data_trip8["NOx_mass_cor"] ** 0.25
 data_trip8["fourth_root_CO"] = data_trip8["CO_mass"] ** 0.25
@@ -28,87 +28,87 @@ obs_ids = obs_ids_dict[default_pollutant]
 image_paths = {
     "NOx": {
         "LightGBM": {
-            651: "D:/Documenten/2024hussarvandepitte/graphics/ShapleyLGBM/NOx_11827.png",
-            1750: "D:/Documenten/2024hussarvandepitte/graphics/ShapleyLGBM/NOx_12926.png",
-            3332: "D:/Documenten/2024hussarvandepitte/graphics/ShapleyLGBM/NOx_14508.png",
-            5138: "D:/Documenten/2024hussarvandepitte/graphics/ShapleyLGBM/NOx_16314.png"
+            651: "C:/Users/hussa/OneDrive/Desktop/thesisapp/thesisapp/graphics/ShapleyLGBM/NOx_11827.png",
+            1750: "C:/Users/hussa/OneDrive/Desktop/thesisapp/thesisapp/graphics/ShapleyLGBM/NOx_12926.png",
+            3332: "C:/Users/hussa/OneDrive/Desktop/thesisapp/thesisapp/graphics/ShapleyLGBM/NOx_14508.png",
+            5138: "C:/Users/hussa/OneDrive/Desktop/thesisapp/thesisapp/graphics/ShapleyLGBM/NOx_16314.png"
         },
         "MLP": {
-            651: "D:/Documenten/2024hussarvandepitte/graphics/ShapleyANN/NOx/shap_waterfall_11827.png",
-            1750: "D:/Documenten/2024hussarvandepitte/graphics/ShapleyANN/NOx/shap_waterfall_12926.png",
-            3332: "D:/Documenten/2024hussarvandepitte/graphics/ShapleyANN/NOx/shap_waterfall_14508.png",
-            5138: "D:/Documenten/2024hussarvandepitte/graphics/ShapleyANN/NOx/shap_waterfall_16314.png"
+            651: "C:/Users/hussa/OneDrive/Desktop/thesisapp/thesisapp/graphics/ShapleyANN/NOx/shap_waterfall_11827.png",
+            1750: "C:/Users/hussa/OneDrive/Desktop/thesisapp/thesisapp/graphics/ShapleyANN/NOx/shap_waterfall_12926.png",
+            3332: "C:/Users/hussa/OneDrive/Desktop/thesisapp/thesisapp/graphics/ShapleyANN/NOx/shap_waterfall_14508.png",
+            5138: "C:/Users/hussa/OneDrive/Desktop/thesisapp/thesisapp/graphics/ShapleyANN/NOx/shap_waterfall_16314.png"
         },
         "LSTM": {
-            651: "D:/Documenten/2024hussarvandepitte/graphics/LIMEplots/LSTM/LSTMnox11827.png",
-            1750: "D:/Documenten/2024hussarvandepitte/graphics/LIMEplots/LSTM/LSTMnox12926.png",
-            3332: "D:/Documenten/2024hussarvandepitte/graphics/LIMEplots/LSTM/LSTMnox14508.png",
-            5138: "D:/Documenten/2024hussarvandepitte/graphics/LIMEplots/LSTM/LSTMnox16314.png"
+            651: "C:/Users/hussa/OneDrive/Desktop/thesisapp/thesisapp/graphics/LIMEplots/LSTM/LSTMnox11827.png",
+            1750: "C:/Users/hussa/OneDrive/Desktop/thesisapp/thesisapp/graphics/LIMEplots/LSTM/LSTMnox12926.png",
+            3332: "C:/Users/hussa/OneDrive/Desktop/thesisapp/thesisapp/graphics/LIMEplots/LSTM/LSTMnox14508.png",
+            5138: "C:/Users/hussa/OneDrive/Desktop/thesisapp/thesisapp/graphics/LIMEplots/LSTM/LSTMnox16314.png"
         },
         "GRU": {
-            651: "D:/Documenten/2024hussarvandepitte/graphics/LIMEplots/GRU/GRUnox11827.png",
-            1750: "D:/Documenten/2024hussarvandepitte/graphics/LIMEplots/GRU/GRUnox12926.png",
-            3332: "D:/Documenten/2024hussarvandepitte/graphics/LIMEplots/GRU/GRUnox14508.png",
-            5138: "D:/Documenten/2024hussarvandepitte/graphics/LIMEplots/GRU/GRUnox16314.png"
+            651: "C:/Users/hussa/OneDrive/Desktop/thesisapp/thesisapp/graphics/LIMEplots/GRU/GRUnox11827.png",
+            1750: "C:/Users/hussa/OneDrive/Desktop/thesisapp/thesisapp/graphics/LIMEplots/GRU/GRUnox12926.png",
+            3332: "C:/Users/hussa/OneDrive/Desktop/thesisapp/thesisapp/graphics/LIMEplots/GRU/GRUnox14508.png",
+            5138: "C:/Users/hussa/OneDrive/Desktop/thesisapp/thesisapp/graphics/LIMEplots/GRU/GRUnox16314.png"
         }
     },
     "CO": {
         "LightGBM": {
-            3594: "D:/Documenten/2024hussarvandepitte/graphics/ShapleyLGBM/CO_14770.png",
-            4093: "D:/Documenten/2024hussarvandepitte/graphics/ShapleyLGBM/CO_15269.png",
-            4504: "D:/Documenten/2024hussarvandepitte/graphics/ShapleyLGBM/CO_15680.png",     
+            3594: "C:/Users/hussa/OneDrive/Desktop/thesisapp/thesisapp/graphics/ShapleyLGBM/CO_14770.png",
+            4093: "C:/Users/hussa/OneDrive/Desktop/thesisapp/thesisapp/graphics/ShapleyLGBM/CO_15269.png",
+            4504: "C:/Users/hussa/OneDrive/Desktop/thesisapp/thesisapp/graphics/ShapleyLGBM/CO_15680.png",     
         },
         "MLP": {
-            3594: "D:/Documenten/2024hussarvandepitte/graphics/ShapleyANN/CO/shap_waterfall_14770.png",
-            4093: "D:/Documenten/2024hussarvandepitte/graphics/ShapleyANN/CO/shap_waterfall_15269.png",
-            4504: "D:/Documenten/2024hussarvandepitte/graphics/ShapleyANN/CO/shap_waterfall_15680.png",
+            3594: "C:/Users/hussa/OneDrive/Desktop/thesisapp/thesisapp/graphics/ShapleyANN/CO/shap_waterfall_14770.png",
+            4093: "C:/Users/hussa/OneDrive/Desktop/thesisapp/thesisapp/graphics/ShapleyANN/CO/shap_waterfall_15269.png",
+            4504: "C:/Users/hussa/OneDrive/Desktop/thesisapp/thesisapp/graphics/ShapleyANN/CO/shap_waterfall_15680.png",
         },
         "LSTM": {
-            3594: "D:/Documenten/2024hussarvandepitte/graphics/LIMEplots/LSTM/LSTMco14770.png",
-            4093: "D:/Documenten/2024hussarvandepitte/graphics/LIMEplots/LSTM/LSTMco15269.png",
-            4504: "D:/Documenten/2024hussarvandepitte/graphics/LIMEplots/LSTM/LSTMco15680.png"
+            3594: "C:/Users/hussa/OneDrive/Desktop/thesisapp/thesisapp/graphics/LIMEplots/LSTM/LSTMco14770.png",
+            4093: "C:/Users/hussa/OneDrive/Desktop/thesisapp/thesisapp/graphics/LIMEplots/LSTM/LSTMco15269.png",
+            4504: "C:/Users/hussa/OneDrive/Desktop/thesisapp/thesisapp/graphics/LIMEplots/LSTM/LSTMco15680.png"
         },
         "GRU": {
-            3594: "D:/Documenten/2024hussarvandepitte/graphics/LIMEplots/GRU/GRUco14770.png",
-            4093: "D:/Documenten/2024hussarvandepitte/graphics/LIMEplots/GRU/GRUco15269.png",
-            4504: "D:/Documenten/2024hussarvandepitte/graphics/LIMEplots/GRU/GRUco15680.png"
+            3594: "C:/Users/hussa/OneDrive/Desktop/thesisapp/thesisapp/graphics/LIMEplots/GRU/GRUco14770.png",
+            4093: "C:/Users/hussa/OneDrive/Desktop/thesisapp/thesisapp/graphics/LIMEplots/GRU/GRUco15269.png",
+            4504: "C:/Users/hussa/OneDrive/Desktop/thesisapp/thesisapp/graphics/LIMEplots/GRU/GRUco15680.png"
         }
     },
     "CO2":{
         "LightGBM": {
-            405: "D:/Documenten/2024hussarvandepitte/graphics/ShapleyLGBM/CO2_11581.png",
-            925: "D:/Documenten/2024hussarvandepitte/graphics/ShapleyLGBM/CO2_12101.png",
-            2502: "D:/Documenten/2024hussarvandepitte/graphics/ShapleyLGBM/CO2_13678.png",
-            3718: "D:/Documenten/2024hussarvandepitte/graphics/ShapleyLGBM/CO2_14894.png",
-            4889: "D:/Documenten/2024hussarvandepitte/graphics/ShapleyLGBM/CO2_16065.png",                
+            405: "C:/Users/hussa/OneDrive/Desktop/thesisapp/thesisapp/graphics/ShapleyLGBM/CO2_11581.png",
+            925: "C:/Users/hussa/OneDrive/Desktop/thesisapp/thesisapp/graphics/ShapleyLGBM/CO2_12101.png",
+            2502: "C:/Users/hussa/OneDrive/Desktop/thesisapp/thesisapp/graphics/ShapleyLGBM/CO2_13678.png",
+            3718: "C:/Users/hussa/OneDrive/Desktop/thesisapp/thesisapp/graphics/ShapleyLGBM/CO2_14894.png",
+            4889: "C:/Users/hussa/OneDrive/Desktop/thesisapp/thesisapp/graphics/ShapleyLGBM/CO2_16065.png",                
         },
         "SVR" : {
-            405: "D:/Documenten/2024hussarvandepitte/graphics/ShapleySVR/shap_waterfall_11581.png",
-            925: "D:/Documenten/2024hussarvandepitte/graphics/ShapleySVR/shap_waterfall_12101.png",
-            2502: "D:/Documenten/2024hussarvandepitte/graphics/ShapleySVR/shap_waterfall_13678.png",
-            3718: "D:/Documenten/2024hussarvandepitte/graphics/ShapleySVR/shap_waterfall_14894.png",
-            4889: "D:/Documenten/2024hussarvandepitte/graphics/ShapleySVR/shap_waterfall_16065.png",
+            405: "C:/Users/hussa/OneDrive/Desktop/thesisapp/thesisapp/graphics/ShapleySVR/shap_waterfall_11581.png",
+            925: "C:/Users/hussa/OneDrive/Desktop/thesisapp/thesisapp/graphics/ShapleySVR/shap_waterfall_12101.png",
+            2502: "C:/Users/hussa/OneDrive/Desktop/thesisapp/thesisapp/graphics/ShapleySVR/shap_waterfall_13678.png",
+            3718: "C:/Users/hussa/OneDrive/Desktop/thesisapp/thesisapp/graphics/ShapleySVR/shap_waterfall_14894.png",
+            4889: "C:/Users/hussa/OneDrive/Desktop/thesisapp/thesisapp/graphics/ShapleySVR/shap_waterfall_16065.png",
         },
         "MLP": {
-            405: "D:/Documenten/2024hussarvandepitte/graphics/ShapleyANN/CO2/shap_waterfall_11581.png",
-            925: "D:/Documenten/2024hussarvandepitte/graphics/ShapleyANN/CO2/shap_waterfall_12101.png",
-            2502: "D:/Documenten/2024hussarvandepitte/graphics/ShapleyANN/CO2/shap_waterfall_13678.png",
-            3718: "D:/Documenten/2024hussarvandepitte/graphics/ShapleyANN/CO2/shap_waterfall_14894.png",
-            4889: "D:/Documenten/2024hussarvandepitte/graphics/ShapleyANN/CO2/shap_waterfall_16065.png"
+            405: "C:/Users/hussa/OneDrive/Desktop/thesisapp/thesisapp/graphics/ShapleyANN/CO2/shap_waterfall_11581.png",
+            925: "C:/Users/hussa/OneDrive/Desktop/thesisapp/thesisapp/graphics/ShapleyANN/CO2/shap_waterfall_12101.png",
+            2502: "C:/Users/hussa/OneDrive/Desktop/thesisapp/thesisapp/graphics/ShapleyANN/CO2/shap_waterfall_13678.png",
+            3718: "C:/Users/hussa/OneDrive/Desktop/thesisapp/thesisapp/graphics/ShapleyANN/CO2/shap_waterfall_14894.png",
+            4889: "C:/Users/hussa/OneDrive/Desktop/thesisapp/thesisapp/graphics/ShapleyANN/CO2/shap_waterfall_16065.png"
         },
         "LSTM": {
-            405: "D:/Documenten/2024hussarvandepitte/graphics/LIMEplots/LSTM/LSTMco2_11581.png",
-            925: "D:/Documenten/2024hussarvandepitte/graphics/LIMEplots/LSTM/LSTMco2_12101.png",
-            2502: "D:/Documenten/2024hussarvandepitte/graphics/LIMEplots/LSTM/LSTMco2_13678.png",
-            3718: "D:/Documenten/2024hussarvandepitte/graphics/LIMEplots/LSTM/LSTMco2_14894.png",
-            4889: "D:/Documenten/2024hussarvandepitte/graphics/LIMEplots/LSTM/LSTMco2_16065.png"
+            405: "C:/Users/hussa/OneDrive/Desktop/thesisapp/thesisapp/graphics/LIMEplots/LSTM/LSTMco2_11581.png",
+            925: "C:/Users/hussa/OneDrive/Desktop/thesisapp/thesisapp/graphics/LIMEplots/LSTM/LSTMco2_12101.png",
+            2502: "C:/Users/hussa/OneDrive/Desktop/thesisapp/thesisapp/graphics/LIMEplots/LSTM/LSTMco2_13678.png",
+            3718: "C:/Users/hussa/OneDrive/Desktop/thesisapp/thesisapp/graphics/LIMEplots/LSTM/LSTMco2_14894.png",
+            4889: "C:/Users/hussa/OneDrive/Desktop/thesisapp/thesisapp/graphics/LIMEplots/LSTM/LSTMco2_16065.png"
         },
         "GRU": {
-            405: "D:/Documenten/2024hussarvandepitte/graphics/LIMEplots/GRU/GRUco2_11581.png", 
-            925: "D:/Documenten/2024hussarvandepitte/graphics/LIMEplots/GRU/GRUco2_12101.png",
-            2502: "D:/Documenten/2024hussarvandepitte/graphics/LIMEplots/GRU/GRUco2_13678.png",
-            3718: "D:/Documenten/2024hussarvandepitte/graphics/LIMEplots/GRU/GRUco2_14894.png",
-            4889: "D:/Documenten/2024hussarvandepitte/graphics/LIMEplots/GRU/GRUco2_16065.png"                              
+            405: "C:/Users/hussa/OneDrive/Desktop/thesisapp/thesisapp/graphics/LIMEplots/GRU/GRUco2_11581.png", 
+            925: "C:/Users/hussa/OneDrive/Desktop/thesisapp/thesisapp/graphics/LIMEplots/GRU/GRUco2_12101.png",
+            2502: "C:/Users/hussa/OneDrive/Desktop/thesisapp/thesisapp/graphics/LIMEplots/GRU/GRUco2_13678.png",
+            3718: "C:/Users/hussa/OneDrive/Desktop/thesisapp/thesisapp/graphics/LIMEplots/GRU/GRUco2_14894.png",
+            4889: "C:/Users/hussa/OneDrive/Desktop/thesisapp/thesisapp/graphics/LIMEplots/GRU/GRUco2_16065.png"                              
         }
     }
 }
@@ -123,7 +123,7 @@ for pol, model_paths_dict in image_paths.items():
 
 # === Create Dash App ===
 app = dash.Dash(__name__)
-
+server = app.server
 # Initial point
 initial_id = obs_ids[0]
 initial_point = data_trip8.iloc[initial_id]
