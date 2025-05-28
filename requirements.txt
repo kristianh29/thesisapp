@@ -1,0 +1,6 @@
+dash
+pandas
+plotly
+base64
+matplotlib
+gunicorn
